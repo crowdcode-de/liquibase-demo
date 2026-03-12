@@ -70,4 +70,28 @@
 		</plugins>
 	</build>
 
+	<profiles>
+		<profile>
+			<id>run-liquibase</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.liquibase</groupId>
+						<artifactId>liquibase-maven-plugin</artifactId>
+						<version>4.33.0</version>
+						<configuration>
+							<searchPath>src/main/resources</searchPath>
+							<changeLogFile>db/changelog/changelog-master.xml</changeLogFile>
+							<url>jdbc:postgresql://localhost:5432/postgres</url>
+							<username>postgres</username>
+							<password>postgres</password>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+
+		</profile>
+
+	</profiles>
+
 </project>
