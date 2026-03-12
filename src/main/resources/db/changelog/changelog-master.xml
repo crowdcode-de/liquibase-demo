@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="/db/changelog/2026/03-01-000-initial-table.xml"/>
+    <include file="/db/changelog/2026/03-01-001-extend-table.xml"/>
+    <include file="/db/changelog/2026/03-01-002-indexes.xml"/>
+    <include file="/db/changelog/2026/03-01-003-foreign-keys.xml"/>
+    <include file="/db/changelog/2026/03-01-004-modify-columns.xml"/>
+    <include file="/db/changelog/2026/03-01-005-database-specific.xml"/>
+    <include file="/db/changelog/2026/03-01-006-preconditions.xml"/>
+    <include file="/db/changelog/2026/03-01-007-plugin-integration.xml"/>
+    <include file="/db/changelog/2026/03-01-008-compensation.xml"/>
+    <include file="/db/changelog/2026/03-01-009-multienv.xml"/>
+    <include file="/db/changelog/2026/03-01-010-properties.xml"/>
+    <include file="/db/changelog/2026/03-01-011-demo.xml"/>
+
+
+
+</databaseChangeLog>

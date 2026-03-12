@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+
+    <changeSet id="initial-tables-007" author="marcusnoerder-tuitje (generated)" >
+        <customChange class="io.crowdcode.liquibase.plugins.demoplugin.GeneratePropertyFileChange">
+            <param name="tableName" value="CUSTOMER"/>
+            <param name="columnName" value="FIRST_NAME"/>
+            <param name="propertyFilePath" value="src/main/resources/liquibase.properties"/>
+        </customChange>
+    </changeSet>
+    
+</databaseChangeLog>
